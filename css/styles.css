@@ -1,0 +1,49 @@
+:root {
+    --brand: #2c7a7b;
+    --accent: #9ae6b4;
+}
+
+body {
+    font-family: system-ui, -apple-system, Segoe UI, Roboto, 'Helvetica Neue', Arial
+}
+
+.navbar-brand span {
+    font-weight: 700;
+    color: var(--brand)
+}
+
+.nav-link.active {
+    font-weight: 700;
+    color: var(--brand) !important
+}
+
+/* make active link visually prominent */
+.nav-link.active {
+    background: linear-gradient(90deg, rgba(44, 122, 123, 0.08), rgba(154, 230, 180, 0.04));
+    border-radius: 6px;
+    padding: .35rem .6rem;
+}
+
+/* small badge-like current location text in navbar */
+#nav-current {
+    color: var(--brand);
+    font-weight: 600;
+    font-size: .95rem;
+    display: inline-block;
+}
+
+/* subtle navbar visual polish */
+.navbar {
+    box-shadow: 0 1px 0 rgba(0, 0, 0, 0.04);
+}
+
+figure img {
+    object-fit: cover
+}
+
+/* small responsive tweak */
+@media (max-width:576px) {
+    .display-6 {
+        font-size: 1.25rem
+    }
+}
