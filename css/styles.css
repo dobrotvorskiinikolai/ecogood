@@ -41,9 +41,103 @@ figure img {
     object-fit: cover
 }
 
-/* small responsive tweak */
-@media (max-width:576px) {
+/* Responsive typography and spacing */
+@media (max-width: 576px) {
     .display-6 {
-        font-size: 1.25rem
+        font-size: 1.25rem;
+    }
+
+    .lead {
+        font-size: 1rem;
+    }
+
+    .navbar-brand span {
+        font-size: 1.2rem;
+    }
+
+    .card-title {
+        font-size: 1rem;
+    }
+
+    .card-text {
+        font-size: 0.9rem;
+    }
+
+    /* Improve button spacing on mobile */
+    .btn {
+        padding: 0.5rem 1rem;
+        font-size: 0.9rem;
+    }
+
+    /* Better spacing for lists */
+    .mb-3 {
+        margin-bottom: 1rem !important;
+    }
+
+    /* Improve form elements on mobile */
+    .form-control {
+        font-size: 0.9rem;
+        padding: 0.5rem;
+    }
+
+    .form-label {
+        font-size: 0.9rem;
+        margin-bottom: 0.5rem;
+    }
+}
+
+@media (max-width: 768px) {
+    /* Tablet adjustments */
+    .display-6 {
+        font-size: 1.5rem;
+    }
+
+    /* Better grid spacing */
+    .row {
+        --bs-gutter-x: 1rem;
+        --bs-gutter-y: 1rem;
+    }
+
+    /* Improve card layout */
+    .card {
+        margin-bottom: 1rem;
+    }
+
+    /* Navigation improvements */
+    .navbar-nav .nav-link {
+        padding: 0.5rem 1rem;
+    }
+}
+
+@media (min-width: 1200px) {
+    /* Large screen optimizations */
+    .container {
+        max-width: 1200px;
+    }
+
+    .display-6 {
+        font-size: 2.5rem;
+    }
+
+    .lead {
+        font-size: 1.25rem;
+    }
+}
+
+/* Ensure images are responsive */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Improve touch targets on mobile */
+@media (max-width: 768px) {
+    .btn, .nav-link, .form-check-input, .form-check-label {
+        min-height: 44px;
+        min-width: 44px;
+    }
+
+    .nav-link {
+        padding: 0.75rem 1rem;
     }
 }
