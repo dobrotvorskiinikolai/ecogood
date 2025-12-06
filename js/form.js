@@ -24,7 +24,10 @@
             const btn = document.getElementById('submitBtn');
             btn.disabled = true;
             btn.textContent = 'Отправка...';
-            const res = await fetch('https://httpbin.org/post', {
+            // Временная заглушка для GitHub Pages - имитируем успешную отправку
+            await new Promise(resolve => setTimeout(resolve, 1000)); // Имитация задержки
+            const mockResponse = { success: true, message: 'Заказ принят (демо-режим)' };
+            const json = { json: mockResponse };
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify(payload)
