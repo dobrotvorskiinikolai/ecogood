@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EcoGoods — Каталог (без Bootstrap)</title>
+    <link rel="icon" href="images/logotitle.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/font.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .container { padding: 0 15px; }
+        .navbar {
+            background: #f8f9fa;
+            padding: 10px;
+            margin-bottom: 20px;
+            border-radius: 5px;
+        }
+        .navbar a {
+            margin-right: 15px;
+            color: #2c7a7b;
+            text-decoration: none;
+        }
+        .navbar a:hover { text-decoration: underline; }
+        h1 { color: #2c7a7b; margin-bottom: 30px; }
+        .products {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+            margin: 20px 0;
+        }
+        .product {
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            padding: 15px;
+            text-align: center;
+        }
+        .product img {
+            max-width: 100%;
+            height: 180px;
+            object-fit: cover;
+            border-radius: 5px;
+            margin-bottom: 10px;
+        }
+        .product h3 {
+            color: #2c7a7b;
+            margin: 10px 0;
+        }
+        .product p { margin: 5px 0; }
+        .btn {
+            display: inline-block;
+            padding: 8px 16px;
+            background: #28a745;
+            color: white;
+            text-decoration: none;
+            border-radius: 3px;
+            margin: 5px;
+            border: none;
+            cursor: pointer;
+        }
+        .btn-outline {
+            background: white;
+            color: #007bff;
+            border: 1px solid #007bff;
+        }
+        .btn:hover { opacity: 0.8; }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <a href="index-no-bootstrap.html">Главная (без Bootstrap)</a>
+        <a href="about-no-bootstrap.html">О нас (без Bootstrap)</a>
+        <a href="shop-no-bootstrap.html">Каталог (без Bootstrap)</a>
+        <a href="index.html">Главная (с Bootstrap)</a>
+    </nav>
+
+    <div class="container">
+        <h1>Каталог товаров</h1>
+
+        <div class="products">
+            <div class="product">
+                <img src="images/22b3e81599c611eab41e48a472b98150_33cd143ba0d011eb805a001a7dda7113.png" alt="Бамбуковая щетка">
+                <h3>Бамбуковая щетка</h3>
+                <p>Цена: 120 ₽</p>
+                <a href="order.html" class="btn">Заказать</a>
+                <button class="btn btn-outline" onclick="alert('Добавлено в корзину!')">В корзину</button>
+            </div>
+
+            <div class="product">
+                <img src="images/bottle.jpg" alt="Многоразовая бутылка">
+                <h3>Многоразовая бутылка</h3>
+                <p>Цена: 850 ₽</p>
+                <a href="order.html" class="btn">Заказать</a>
+                <button class="btn btn-outline" onclick="alert('Добавлено в корзину!')">В корзину</button>
+            </div>
+
+            <div class="product">
+                <img src="images/orig.webp" alt="Набор пакетов">
+                <h3>Набор многоразовых пакетов</h3>
+                <p>Цена: 420 ₽</p>
+                <a href="order.html" class="btn">Заказать</a>
+                <button class="btn btn-outline" onclick="alert('Добавлено в корзину!')">В корзину</button>
+            </div>
+
+            <div class="product">
+                <img src="images/luffa-dish-washing-7.jpg" alt="Экологичная губка">
+                <h3>Экологичная губка</h3>
+                <p>Цена: 75 ₽</p>
+                <a href="order.html" class="btn">Заказать</a>
+                <button class="btn btn-outline" onclick="alert('Добавлено в корзину!')">В корзину</button>
+            </div>
+
+            <div class="product">
+                <img src="images/bamboo.jpg" alt="Салфетки из бамбука">
+                <h3>Салфетки из бамбука</h3>
+                <p>Цена: 200 ₽</p>
+                <a href="order.html" class="btn">Заказать</a>
+                <button class="btn btn-outline" onclick="alert('Добавлено в корзину!')">В корзину</button>
+            </div>
+
+            <div class="product">
+                <img src="images/mylo-lavanda.jpg" alt="Натуральное мыло">
+                <h3>Натуральное мыло</h3>
+                <p>Цена: 160 ₽</p>
+                <a href="order.html" class="btn">Заказать</a>
+                <button class="btn btn-outline" onclick="alert('Добавлено в корзину!')">В корзину</button>
+            </div>
+        </div>
+
+        <p style="text-align: center; margin-top: 30px;">
+            <a href="order.html" class="btn">Оформить заказ</a>
+            <a href="index-no-bootstrap.html" class="btn" style="background: #6c757d;">← На главную</a>
+        </p>
+    </div>
+
+    <script src="js/nav.js"></script>
+</body>
+</html>

@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EcoGoods — Тест без Bootstrap</title>
+    <link rel="icon" href="images/logotitle.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/font.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .container { padding: 0 15px; }
+        .navbar {
+            background: #f8f9fa;
+            padding: 10px;
+            margin-bottom: 20px;
+            border-radius: 5px;
+        }
+        .navbar a {
+            margin-right: 15px;
+            color: #2c7a7b;
+            text-decoration: none;
+        }
+        .navbar a:hover { text-decoration: underline; }
+        h1 { color: #2c7a7b; text-align: center; margin-bottom: 30px; }
+        .lead { font-size: 1.1em; text-align: center; margin-bottom: 30px; }
+        .section { margin: 30px 0; padding: 20px; border: 1px solid #ddd; border-radius: 5px; }
+        .row { display: flex; flex-wrap: wrap; margin: -10px; }
+        .col-8 { flex: 0 0 66.666%; padding: 10px; }
+        .col-4 { flex: 0 0 33.333%; padding: 10px; }
+        .btn {
+            display: inline-block;
+            padding: 10px 20px;
+            background: #28a745;
+            color: white;
+            text-decoration: none;
+            border-radius: 3px;
+            margin: 5px;
+        }
+        .btn:hover { opacity: 0.8; }
+        .mb-3 { margin-bottom: 15px; }
+        .ms-3 { margin-left: 15px; }
+        @media (max-width: 768px) {
+            .col-8, .col-4 { flex: 0 0 100%; }
+            .row { flex-direction: column; }
+        }
+    </style>
+</head>
+<body id="top">
+    <nav class="navbar">
+        <a href="index-no-bootstrap.html">Главная (без Bootstrap)</a>
+        <a href="about-no-bootstrap.html">О нас (без Bootstrap)</a>
+        <a href="shop-no-bootstrap.html">Каталог (без Bootstrap)</a>
+        <a href="index.html">Главная (с Bootstrap)</a>
+    </nav>
+
+    <div class="container">
+        <h1>EcoGoods — товары для дома и природы</h1>
+        <p class="lead">Локальный магазин экологичных товаров — информация, галерея и каталог.</p>
+
+        <nav class="mb-3">
+            <a href="#section1">О магазине</a> |
+            <a href="#section2">Почему выбирают нас</a>
+        </nav>
+
+        <section id="section1" class="section">
+            <h2>О магазине</h2>
+            <div class="row">
+                <div class="col-8">
+                    <p>Мы предлагаем качественные экологичные товары: предметы для дома, косметику и
+                    аксессуары. Наша философия проста — забота о вас и о планете. Каждый продукт в нашем ассортименте тщательно отобран с
+                    точки зрения экологичности, этичности производства и безупречного качества.
+
+                    Мы верим, что осознанное потребление — это не тренд, а образ жизни. Поэтому мы сотрудничаем только с
+                    проверенными поставщиками и брендами, которые разделяют наши ценности: используют натуральные и
+                    переработанные материалы, ответственно подходят к упаковке и стремятся минимизировать воздействие на
+                    окружающую среду.
+
+                    В нашем магазине вы найдёте всё, чтобы сделать свой быт более устойчивым и гармоничным: от
+                    бамбуковых щёток и многоразовых сумок до органической косметики в перерабатываемой упаковке и
+                    стильных аксессуаров из натуральных материалов.
+
+                    Добро пожаловать в сообщество людей, которые выбирают осознанно!</p>
+                </div>
+                <div class="col-4">
+                    <figure>
+                        <img src="images/Biomatica-e1491225680267.jpg"
+                            style="max-width: 100%; border-radius: 5px;" alt="eco goods">
+                        <figcaption>Пример ассортимента — натуральные ткани и упаковка.</figcaption>
+                    </figure>
+                </div>
+            </div>
+        </section>
+
+        <section id="section2" class="section">
+            <h2>Почему выбирают нас</h2>
+            <ul>
+                <li class="mb-3">
+                    🌱 Экологичные материалы
+                    <p class="ms-3">Мы гарантируем, что каждый товар создан из безопасных для природы и
+                        человека материалов: сертифицированная органика, переработанное сырьё, быстро возобновляемые ресурсы (бамбук,
+                        пробка, хлопок). Никакого пластика там, где можно без него обойтись.</p>
+                </li>
+                <li class="mb-3">
+                    🚚 Быстрая и зелёная доставка по региону
+                    <p class="ms-3">Мы не только доставляем заказы быстро и удобно, но и делаем это с
+                        заботой об экологии: используем биоразлагаемую или многоразовую упаковку, а по возможности объединяем
+                        отправления, чтобы снизить углеродный след.</p>
+                </li>
+                <li class="mb-3">
+                    ✅ Гарантия качества и осознанности
+                    <p class="ms-3">Мы лично тестируем продукцию и работаем только с теми, кто предоставляет прозрачную
+                        информацию о цепочке поставок. На многие товары действует расширенная гарантия, а наша
+                        служба заботы всегда поможет с выбором и ответит на вопросы.</p>
+                </li>
+            </ul>
+        </section>
+
+        <p style="text-align: center;">
+            <a href="shop-no-bootstrap.html" class="btn">Перейти в каталог</a>
+            <a href="#top" class="btn">К началу страницы</a>
+            <a href="index.html" class="btn" style="background: #007bff;">Вернуться к Bootstrap версии</a>
+        </p>
+    </div>
+
+    <script src="js/nav.js"></script>
+</body>
+</html>

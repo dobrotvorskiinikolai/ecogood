@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EcoGoods — О нас (без Bootstrap)</title>
+    <link rel="icon" href="images/logotitle.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/font.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .container { padding: 0 15px; }
+        .navbar {
+            background: #f8f9fa;
+            padding: 10px;
+            margin-bottom: 20px;
+            border-radius: 5px;
+        }
+        .navbar a {
+            margin-right: 15px;
+            color: #2c7a7b;
+            text-decoration: none;
+        }
+        .navbar a:hover { text-decoration: underline; }
+        h1 { color: #2c7a7b; margin-bottom: 30px; }
+        .section { margin: 30px 0; padding: 20px; border: 1px solid #ddd; border-radius: 5px; }
+        .row { display: flex; flex-wrap: wrap; margin: -10px; }
+        .col-8 { flex: 0 0 66.666%; padding: 10px; }
+        .col-4 { flex: 0 0 33.333%; padding: 10px; }
+        @media (max-width: 768px) {
+            .col-8, .col-4 { flex: 0 0 100%; }
+            .row { flex-direction: column; }
+        }
+    </style>
+</head>
+<body id="top">
+    <nav class="navbar">
+        <a href="index-no-bootstrap.html">Главная (без Bootstrap)</a>
+        <a href="about-no-bootstrap.html">О нас (без Bootstrap)</a>
+        <a href="shop-no-bootstrap.html">Каталог (без Bootstrap)</a>
+        <a href="index.html">Главная (с Bootstrap)</a>
+    </nav>
+
+    <div class="container">
+        <h1>О магазине</h1>
+
+        <nav class="mb-3">
+            <a href="#who">Кто мы</a> |
+            <a href="#mission">Миссия</a>
+        </nav>
+
+        <section id="who" class="section">
+            <h2>Кто мы</h2>
+            <div class="row">
+                <div class="col-8">
+                    <p>Мы — небольшая, но сплоченная команда единомышленников, работающая над продвижением
+                        культуры устойчивого и осознанного потребления.
+
+                        Нас объединяет искренняя вера в то, что даже небольшие, но продуманные изменения в повседневных
+                        привычках могут изменить мир к лучшему. Мы не корпорация, а сообщество живых людей — энтузиастов,
+                        родителей, экологов и дизайнеров, — которые сами стремятся жить в гармонии с природой.
+
+                        Наша миссия — сделать экологичный образ жизни доступным, понятным и вдохновляющим. Мы не просто продаем
+                        товары, а тщательно исследуем, тестируем и выбираем лучшее, чтобы предложить вам честные, эффективные и
+                        красивые решения для дома и быта.
+
+                        Для нас важна каждая история: история продукта, который мы продаем, история планеты, которую мы
+                        защищаем, и ваша личная история — как часть нашего общего движения к более разумному будущему.
+
+                        Мы рады знакомству и всегда на связи!</p>
+                </div>
+                <div class="col-4">
+                    <figure>
+                        <img src="images/Biomatica-e1491225680267.jpg"
+                            style="max-width: 100%; border-radius: 5px;" alt="eco goods">
+                        <figcaption>Наш магазин.</figcaption>
+                    </figure>
+                </div>
+            </div>
+        </section>
+
+        <section id="mission" class="section">
+            <h2>Миссия</h2>
+            <div class="row">
+                <div class="col-8">
+                    <p>Сделать экологичный образ жизни не элитарным трендом, а доступной, понятной и
+                        естественной частью повседневности для каждого.
+
+                        Мы видим свою задачу в том, чтобы демистифицировать концепцию устойчивого потребления. Для этого мы:
+
+                        Объясняем просто. Мы рассказываем, почему тот или иной материал или бренд считается экологичным, и как
+                        именно ваша покупка вносит позитивный вклад.
+
+                        Предлагаем доступные альтернативы. Мы стремимся, чтобы забота о планете не была финансовым бременем, и
+                        формируем ценовую политику с этим приоритетом.
+
+                        Создаем сообщество. Мы хотим, чтобы вы чувствовали поддержку на этом пути, а не просто совершали разовые
+                        покупки. Поэтому мы делимся знаниями, отвечаем на вопросы и создаем пространство для обмена опытом.
+
+                        Наша цель — чтобы выбор в пользу экологичных товаров был для вас легким, осознанным и радостным. Потому
+                        что настоящее изменение начинается не с масштабных действий, а с простых и доступных решений, принятых
+                        сегодня.</p>
+                </div>
+                <div class="col-4">
+                    <div style="background: #e8f5e8; padding: 20px; border-radius: 5px; text-align: center;">
+                        <h3 style="color: #28a745; margin: 0;">🌱</h3>
+                        <p style="margin: 10px 0 0 0; color: #666;">Наша цель - устойчивое будущее</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <p style="text-align: center; margin-top: 30px;">
+            <a href="index-no-bootstrap.html" style="display: inline-block; padding: 10px 20px; background: #28a745; color: white; text-decoration: none; border-radius: 3px;">← На главную</a>
+        </p>
+    </div>
+
+    <script src="js/nav.js"></script>
+</body>
+</html>
